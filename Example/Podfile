@@ -1,0 +1,6 @@
+use_frameworks!
+target 'HamburgerViewController_Tests' do
+  pod 'HamburgerViewController', :path => '../'
+  
+  
+end
