@@ -1,0 +1,6 @@
+framework module HamburgerViewController {
+  umbrella header "HamburgerViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

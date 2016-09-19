@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C19498C6C607BECF0DB09B1D3CDB9AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		1758D89875D5B12B6F0A4D55CC8B1A4C /* HamburgerViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01FD7830A1CA2D2E4AC906754BCABF1C /* HamburgerViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B034CE1709141D0871E160658315A20 /* HamburgerViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD4F774A898F03378AC7E45228CDA98 /* HamburgerViewController-dummy.m */; };
+		68CF65AFEBF3B49E67D420115ED5C5C6 /* Pods-HamburgerViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A14CCD431536619DB8F003AC71BE773F /* Pods-HamburgerViewController_Tests-dummy.m */; };
+		9D85E60D785DA2A08AE5534C1FC2FBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		FC01CDFA1D8F9CD600803BE6 /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC01CDF91D8F9CD600803BE6 /* HamburgerViewController.swift */; };
+		FD3F0AEBFFF23C9B3AFA7AB72CE1D646 /* Pods-HamburgerViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EBD9759CB95BA4C1542E61B0A8EB42 /* Pods-HamburgerViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95E828FEE6C75C3994A259C612C2F0A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54671ACF6D0169C927431D51170BE800;
+			remoteInfo = HamburgerViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01FD7830A1CA2D2E4AC906754BCABF1C /* HamburgerViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HamburgerViewController-umbrella.h"; sourceTree = "<group>"; };
+		0789ABA5FFBD283F71633846A1A7ACF5 /* Pods-HamburgerViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-HamburgerViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		129926CA5B4165EA6FA3204BB9B5F497 /* Pods_HamburgerViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HamburgerViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD555CC5F20D436E43A703EF3FBCB5D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EBD9759CB95BA4C1542E61B0A8EB42 /* Pods-HamburgerViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HamburgerViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		401E2C0F23FD94993730668C1FF51FA8 /* HamburgerViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HamburgerViewController.xcconfig; sourceTree = "<group>"; };
+		5A1345587E38278F74FF7E6924460798 /* HamburgerViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HamburgerViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A46629D6F8FD8F95D4373A61B063A99 /* Pods-HamburgerViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HamburgerViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77A05341E5B1E71095B57B70D163BDC2 /* Pods-HamburgerViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HamburgerViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		8785B3C15A0993615139B9D7CF8B5994 /* Pods-HamburgerViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HamburgerViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD137393CC3CBC74C75D733F867E547 /* Pods-HamburgerViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HamburgerViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		A14CCD431536619DB8F003AC71BE773F /* Pods-HamburgerViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HamburgerViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		AD90F73BD9B34192363879B5C97D11C7 /* Pods-HamburgerViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HamburgerViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BDD4F774A898F03378AC7E45228CDA98 /* HamburgerViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HamburgerViewController-dummy.m"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E5A6EE2DF6CA4A1D3A4A31153AB4FA3F /* HamburgerViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = HamburgerViewController.modulemap; sourceTree = "<group>"; };
+		EEA4F229D283A125C651EAAF57D227EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFB6EBD571C5F537AA00DC28DAEBD5A /* Pods-HamburgerViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HamburgerViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC01CDF91D8F9CD600803BE6 /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
+		FCBD7FF704CA190F3C90EE22F2DEDFD9 /* HamburgerViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HamburgerViewController-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77AA1174E065C530FAC9B7A8DC6889BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D85E60D785DA2A08AE5534C1FC2FBC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEE14FBA78331C4257346C6E00E02042 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C19498C6C607BECF0DB09B1D3CDB9AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A8C32F596C079A1DFCE39C71353AD4 /* HamburgerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				678722EECDEEFF90E575D02FC50A12B6 /* HamburgerViewController */,
+				517D796EBEFEB3CD04A2388EA2E05126 /* Support Files */,
+			);
+			name = HamburgerViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		351A01D5717D6DF2DFB8AAF99BE71884 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D52AAB283E046AF5458071B32C4F240 /* Pods-HamburgerViewController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		517D796EBEFEB3CD04A2388EA2E05126 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6EE2DF6CA4A1D3A4A31153AB4FA3F /* HamburgerViewController.modulemap */,
+				401E2C0F23FD94993730668C1FF51FA8 /* HamburgerViewController.xcconfig */,
+				BDD4F774A898F03378AC7E45228CDA98 /* HamburgerViewController-dummy.m */,
+				FCBD7FF704CA190F3C90EE22F2DEDFD9 /* HamburgerViewController-prefix.pch */,
+				01FD7830A1CA2D2E4AC906754BCABF1C /* HamburgerViewController-umbrella.h */,
+				EEA4F229D283A125C651EAAF57D227EB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HamburgerViewController";
+			sourceTree = "<group>";
+		};
+		5D52AAB283E046AF5458071B32C4F240 /* Pods-HamburgerViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1AD555CC5F20D436E43A703EF3FBCB5D /* Info.plist */,
+				0789ABA5FFBD283F71633846A1A7ACF5 /* Pods-HamburgerViewController_Tests.modulemap */,
+				6A46629D6F8FD8F95D4373A61B063A99 /* Pods-HamburgerViewController_Tests-acknowledgements.markdown */,
+				EFFB6EBD571C5F537AA00DC28DAEBD5A /* Pods-HamburgerViewController_Tests-acknowledgements.plist */,
+				A14CCD431536619DB8F003AC71BE773F /* Pods-HamburgerViewController_Tests-dummy.m */,
+				77A05341E5B1E71095B57B70D163BDC2 /* Pods-HamburgerViewController_Tests-frameworks.sh */,
+				9DD137393CC3CBC74C75D733F867E547 /* Pods-HamburgerViewController_Tests-resources.sh */,
+				22EBD9759CB95BA4C1542E61B0A8EB42 /* Pods-HamburgerViewController_Tests-umbrella.h */,
+				8785B3C15A0993615139B9D7CF8B5994 /* Pods-HamburgerViewController_Tests.debug.xcconfig */,
+				AD90F73BD9B34192363879B5C97D11C7 /* Pods-HamburgerViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-HamburgerViewController_Tests";
+			path = "Target Support Files/Pods-HamburgerViewController_Tests";
+			sourceTree = "<group>";
+		};
+		678722EECDEEFF90E575D02FC50A12B6 /* HamburgerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				948F054F650902D307936CA4C253CB11 /* Classes */,
+			);
+			path = HamburgerViewController;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				A53A942899D0BF626411FB00B967E453 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F60160DC9FEF55221896338DB3BBC7E3 /* Products */,
+				351A01D5717D6DF2DFB8AAF99BE71884 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		948F054F650902D307936CA4C253CB11 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC01CDF91D8F9CD600803BE6 /* HamburgerViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A53A942899D0BF626411FB00B967E453 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03A8C32F596C079A1DFCE39C71353AD4 /* HamburgerViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F60160DC9FEF55221896338DB3BBC7E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A1345587E38278F74FF7E6924460798 /* HamburgerViewController.framework */,
+				129926CA5B4165EA6FA3204BB9B5F497 /* Pods_HamburgerViewController_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		40FE2B4D14575C61CC75743B2CA76E2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3F0AEBFFF23C9B3AFA7AB72CE1D646 /* Pods-HamburgerViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8B3F487BF536C5D20E1BC20371B0DF0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1758D89875D5B12B6F0A4D55CC8B1A4C /* HamburgerViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		54671ACF6D0169C927431D51170BE800 /* HamburgerViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 598FDF3BC7A953B972303B52A3621B5B /* Build configuration list for PBXNativeTarget "HamburgerViewController" */;
+			buildPhases = (
+				E008FF49FC8C9F62163BFC343F12E8A3 /* Sources */,
+				FEE14FBA78331C4257346C6E00E02042 /* Frameworks */,
+				C8B3F487BF536C5D20E1BC20371B0DF0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HamburgerViewController;
+			productName = HamburgerViewController;
+			productReference = 5A1345587E38278F74FF7E6924460798 /* HamburgerViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD69BF721A535A4E6B7A85636C244FAA /* Pods-HamburgerViewController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61138A4FB7B5A539CD9D2F75AAA8594E /* Build configuration list for PBXNativeTarget "Pods-HamburgerViewController_Tests" */;
+			buildPhases = (
+				CECA87CA9424284B56FC9AB5CE3EF688 /* Sources */,
+				77AA1174E065C530FAC9B7A8DC6889BA /* Frameworks */,
+				40FE2B4D14575C61CC75743B2CA76E2D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F90E0115B9E5692F5B42E8F8402F7092 /* PBXTargetDependency */,
+			);
+			name = "Pods-HamburgerViewController_Tests";
+			productName = "Pods-HamburgerViewController_Tests";
+			productReference = 129926CA5B4165EA6FA3204BB9B5F497 /* Pods_HamburgerViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F60160DC9FEF55221896338DB3BBC7E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54671ACF6D0169C927431D51170BE800 /* HamburgerViewController */,
+				FD69BF721A535A4E6B7A85636C244FAA /* Pods-HamburgerViewController_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CECA87CA9424284B56FC9AB5CE3EF688 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68CF65AFEBF3B49E67D420115ED5C5C6 /* Pods-HamburgerViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E008FF49FC8C9F62163BFC343F12E8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC01CDFA1D8F9CD600803BE6 /* HamburgerViewController.swift in Sources */,
+				5B034CE1709141D0871E160658315A20 /* HamburgerViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F90E0115B9E5692F5B42E8F8402F7092 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HamburgerViewController;
+			target = 54671ACF6D0169C927431D51170BE800 /* HamburgerViewController */;
+			targetProxy = 95E828FEE6C75C3994A259C612C2F0A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A5E802F876A518D6B07DBDA1FF9F403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD90F73BD9B34192363879B5C97D11C7 /* Pods-HamburgerViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HamburgerViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HamburgerViewController_Tests/Pods-HamburgerViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HamburgerViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7BD01798DC8EDC848C92B376C17FC6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401E2C0F23FD94993730668C1FF51FA8 /* HamburgerViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HamburgerViewController/HamburgerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HamburgerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HamburgerViewController/HamburgerViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HamburgerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EC3ACCA31B4A0EE84CE2F46336444EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8785B3C15A0993615139B9D7CF8B5994 /* Pods-HamburgerViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HamburgerViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HamburgerViewController_Tests/Pods-HamburgerViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HamburgerViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA6589BF1556CF5BFF5CD7FBE184CCC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401E2C0F23FD94993730668C1FF51FA8 /* HamburgerViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HamburgerViewController/HamburgerViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HamburgerViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HamburgerViewController/HamburgerViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HamburgerViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		598FDF3BC7A953B972303B52A3621B5B /* Build configuration list for PBXNativeTarget "HamburgerViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7BD01798DC8EDC848C92B376C17FC6A /* Debug */,
+				FA6589BF1556CF5BFF5CD7FBE184CCC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61138A4FB7B5A539CD9D2F75AAA8594E /* Build configuration list for PBXNativeTarget "Pods-HamburgerViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC3ACCA31B4A0EE84CE2F46336444EED /* Debug */,
+				0A5E802F876A518D6B07DBDA1FF9F403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

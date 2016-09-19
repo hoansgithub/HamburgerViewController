@@ -1,0 +1,16 @@
+PODS:
+  - HamburgerViewController (0.1.0)
+
+DEPENDENCIES:
+  - HamburgerViewController (from `../`)
+
+EXTERNAL SOURCES:
+  HamburgerViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HamburgerViewController: 697c8d824a3515ce0566be52e41e28529b90a92d
+
+PODFILE CHECKSUM: e4e1548c07e7f106f3ef07e47188699770d53981
+
+COCOAPODS: 1.0.1
