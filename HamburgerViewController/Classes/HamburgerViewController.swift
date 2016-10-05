@@ -8,24 +8,24 @@
 
 import UIKit
 
-let SCREEN_SIZE: CGRect = UIScreen.mainScreen().bounds
+let SCREEN_SIZE: CGRect = UIScreen.main.bounds
 enum HamburgerMenuInitialPosition  {
-    case Left
-    case Right
+    case left
+    case right
 }
 class HamburgerViewController: UIViewController {
-
-    private(set) weak var viewHolder : UIViewController?
     
-    private(set) weak var menuView : UIView?
+    fileprivate(set) weak var viewHolder : UIViewController?
     
-    private(set) var menuHolder : UIView?
+    fileprivate(set) weak var menuView : UIView?
     
-    private(set) var widthMultiplier: CGFloat   = 0.8
+    fileprivate(set) var menuHolder : UIView?
     
-    private(set) var initialPosition: HamburgerMenuInitialPosition = .Left
+    fileprivate(set) var widthMultiplier: CGFloat   = 0.8
     
-    private(set) var menuConstraints = [NSLayoutConstraint]()
+    fileprivate(set) var initialPosition: HamburgerMenuInitialPosition = .left
+    
+    fileprivate(set) var menuConstraints = [NSLayoutConstraint]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class HamburgerViewController: UIViewController {
         }
         
         let viewFrame = viewHolder?.view.frame
-        self.menuHolder = UIView(frame: CGRectMake(-(viewFrame?.size.width)!, 0,  (viewFrame?.size.width)!,  (viewFrame?.size.height)!) )
+        self.menuHolder = UIView(frame: CGRect(x: -(viewFrame?.size.width)!, y: 0,  width: (viewFrame?.size.width)!,  height: (viewFrame?.size.height)!) )
         self.viewHolder?.view.superview?.addSubview(self.menuHolder!)
         
         
@@ -49,18 +49,18 @@ class HamburgerViewController: UIViewController {
         
         
     }
-
-    func singleTap(gestureRecognizer: UITapGestureRecognizer ) {
-
+    
+    func singleTap(_ gestureRecognizer: UITapGestureRecognizer ) {
+        
         if gestureRecognizer.view == self.menuHolder {
             self.closeBurgerMenu()
         }
     }
     
     
-    final func openBurgerMenuWithViewController(vc : UIViewController , widthMultiplier : CGFloat , initialPosition : HamburgerMenuInitialPosition) {
+    final func openBurgerMenuWithViewController(_ vc : UIViewController , widthMultiplier : CGFloat , initialPosition : HamburgerMenuInitialPosition) {
         let viewFrame = viewHolder?.view.frame
-        let posKey : CGFloat = initialPosition == .Left ? (-1) : 1
+        let posKey : CGFloat = initialPosition == .left ? (-1) : 1
         self.menuHolder?.frame.origin.x = (viewFrame?.size.width)! * (posKey)
         
         self.initialPosition = initialPosition
@@ -71,7 +71,7 @@ class HamburgerViewController: UIViewController {
         self.menuView?.removeFromSuperview()
         self.menuHolder?.addSubview(vc.view)
         vc.view.didMoveToSuperview()
-        vc.didMoveToParentViewController(self)
+        vc.didMove(toParentViewController: viewHolder)
         self.menuHolder?.removeConstraints(menuConstraints)
         self.menuView = vc.view
         self.menuView?.translatesAutoresizingMaskIntoConstraints = false
@@ -83,13 +83,13 @@ class HamburgerViewController: UIViewController {
         ]
         let metrics = ["viewWidth" : (viewFrame?.size.width)! * widthMultiplier]
         
-        let constraintsV = NSLayoutConstraint.constraintsWithVisualFormat("V:|[menuView]|", options: [], metrics: nil, views: views)
-        let constraintsHFormat = initialPosition == .Left ? "H:|[menuView(viewWidth)]" : "H:[menuView(viewWidth)]|"
+        let constraintsV = NSLayoutConstraint.constraints(withVisualFormat: "V:|[menuView]|", options: [], metrics: nil, views: views)
+        let constraintsHFormat = initialPosition == .left ? "H:|[menuView(viewWidth)]" : "H:[menuView(viewWidth)]|"
         
-        let constraintsH = NSLayoutConstraint.constraintsWithVisualFormat(constraintsHFormat, options: [], metrics: metrics, views: views)
+        let constraintsH = NSLayoutConstraint.constraints(withVisualFormat: constraintsHFormat, options: [], metrics: metrics, views: views)
         
-        menuConstraints.appendContentsOf(constraintsV)
-        menuConstraints.appendContentsOf(constraintsH)
+        menuConstraints.append(contentsOf: constraintsV)
+        menuConstraints.append(contentsOf: constraintsH)
         
         self.menuHolder?.addConstraints(menuConstraints)
         
@@ -103,34 +103,34 @@ class HamburgerViewController: UIViewController {
         
         //animate view holder
         self.menuHolder?.frame.origin.x = (viewFrame?.size.width)! * widthMultiplier * posKey
-        UIView.animateWithDuration(0.3, delay: 0.0, options: UIViewAnimationOptions.AllowAnimatedContent, animations: {
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: UIViewAnimationOptions.allowAnimatedContent, animations: {
             self.menuHolder?.frame.origin.x = 0
             self.viewHolder?.view.frame.origin.x = (viewFrame?.size.width)! * widthMultiplier * -posKey
-            }) { (finished) in
+        }) { (finished) in
         }
         
     }
     
     final func closeBurgerMenu() {
         
-        let posKey: CGFloat  = self.initialPosition == .Left ? -1 : 1
+        let posKey: CGFloat  = self.initialPosition == .left ? -1 : 1
         
-        UIView.animateWithDuration(0.3, animations: { 
-                self.menuHolder?.frame.origin.x = (self.menuHolder?.frame.size.width)! * self.widthMultiplier * posKey
+        UIView.animate(withDuration: 0.3, animations: {
+            self.menuHolder?.frame.origin.x = (self.menuHolder?.frame.size.width)! * self.widthMultiplier * posKey
             self.viewHolder?.view.frame.origin.x = 0
-            }) { (finished) in
+            }, completion: { (finished) in
                 if finished {
                     self.menuHolder?.frame.origin.x = (self.menuHolder?.frame.size.width)! * -posKey
                     self.menuView?.removeFromSuperview()
                 }
-        }
+        })
     }
 }
 
 
 //prevent child view tap
 extension HamburgerViewController : UIGestureRecognizerDelegate {
-    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if touch.view == self.menuHolder {
             return true
         }
